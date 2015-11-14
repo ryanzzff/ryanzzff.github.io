@@ -3,17 +3,47 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Programming Notes</title>
+  <title>d3.js tag cloud on hexo | Programming Notes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Programming Notes">
-<meta property="og:url" content="http://blog.ryanzzff.com/index.html">
+  <meta name="description" content="PrerequisiteThis blog post will demonstrate how to integrate d3 tag cloud into a hexo blog.
+ 
+Framework/Library
+hexo (v3.1.1)
+d3.js (v3)
+d3.js tag cloud
+
+Steps
+Add and setup required Libraries
+Get tag">
+<meta property="og:type" content="article">
+<meta property="og:title" content="d3.js tag cloud on hexo">
+<meta property="og:url" content="http://blog.ryanzzff.com/2015/11/14/d3-tag-cloud-on-hexo/index.html">
 <meta property="og:site_name" content="Programming Notes">
-<meta property="og:description">
+<meta property="og:description" content="PrerequisiteThis blog post will demonstrate how to integrate d3 tag cloud into a hexo blog.
+ 
+Framework/Library
+hexo (v3.1.1)
+d3.js (v3)
+d3.js tag cloud
+
+Steps
+Add and setup required Libraries
+Get tag">
+<meta property="og:image" content="http://i.imgur.com/SquER2C.png">
+<meta property="og:image" content="http://i.imgur.com/8SYXvTC.png">
+<meta property="og:updated_time" content="2015-11-14T18:53:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Programming Notes">
-<meta name="twitter:description">
+<meta name="twitter:title" content="d3.js tag cloud on hexo">
+<meta name="twitter:description" content="PrerequisiteThis blog post will demonstrate how to integrate d3 tag cloud into a hexo blog.
+ 
+Framework/Library
+hexo (v3.1.1)
+d3.js (v3)
+d3.js tag cloud
+
+Steps
+Add and setup required Libraries
+Get tag">
   
     <link rel="alternative" href="/atom.xml" title="Programming Notes" type="application/atom+xml">
   
@@ -59,9 +89,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-d3-tag-cloud-on-hexo" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-d3-tag-cloud-on-hexo" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/11/14/d3-tag-cloud-on-hexo/" class="article-date">
   <time datetime="2015-11-14T10:50:09.000Z" itemprop="datePublished">2015-11-14</time>
@@ -74,8 +102,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/14/d3-tag-cloud-on-hexo/">d3.js tag cloud on hexo</a>
+    <h1 class="article-title" itemprop="name">
+      d3.js tag cloud on hexo
     </h1>
   
 
@@ -129,58 +157,20 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/11/14/hello-world/" class="article-date">
-  <time datetime="2015-11-14T10:47:57.000Z" itemprop="datePublished">2015-11-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/14/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2015/11/14/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.ryanzzff.com/2015/11/14/hello-world/" data-id="cigzfzt700009it7l0l1muce3" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hello-world/">hello-world</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
 
-
-  
-  
 </section>
         
           <aside id="sidebar">
