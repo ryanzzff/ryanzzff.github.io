@@ -3,17 +3,26 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: 2038 | Programming Notes</title>
+  <title>SSH welcome message with ASCII Text | Programming Notes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Programming Notes">
-<meta property="og:url" content="http://blog.ryanzzff.com/tags/2038/index.html">
+  <meta name="description" content="Have you tried once logged in to a remote server through ssh, but forget if it is a DEV or PROD environment?One of the ways is to display a welcome message after login:
+
+Generate an ASCII text using A">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SSH welcome message with ASCII Text">
+<meta property="og:url" content="http://blog.ryanzzff.com/2015/12/31/SSH-welcome-message-with-ASCII-Text/index.html">
 <meta property="og:site_name" content="Programming Notes">
-<meta property="og:description">
+<meta property="og:description" content="Have you tried once logged in to a remote server through ssh, but forget if it is a DEV or PROD environment?One of the ways is to display a welcome message after login:
+
+Generate an ASCII text using A">
+<meta property="og:image" content="http://i.imgur.com/Gj2jNIx.png">
+<meta property="og:image" content="http://imgur.com/Yv9RtPK.png">
+<meta property="og:updated_time" content="2015-12-30T17:18:48.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Programming Notes">
-<meta name="twitter:description">
+<meta name="twitter:title" content="SSH welcome message with ASCII Text">
+<meta name="twitter:description" content="Have you tried once logged in to a remote server through ssh, but forget if it is a DEV or PROD environment?One of the ways is to display a welcome message after login:
+
+Generate an ASCII text using A">
   
     <link rel="alternative" href="/atom.xml" title="Programming Notes" type="application/atom+xml">
   
@@ -59,39 +68,71 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/11/24/Magic-Number/" class="archive-article-date">
-  <time datetime="2015-11-23T16:06:50.000Z" itemprop="datePublished">Nov 24</time>
+        <section id="main"><article id="post-SSH-welcome-message-with-ASCII-Text" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/12/31/SSH-welcome-message-with-ASCII-Text/" class="article-date">
+  <time datetime="2015-12-30T16:20:10.000Z" itemprop="datePublished">2015-12-31</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/11/24/Magic-Number/">Magic Number</a>
+    <h1 class="article-title" itemprop="name">
+      SSH welcome message with ASCII Text
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Have you tried once logged in to a remote server through ssh, but forget if it is a DEV or PROD environment?<br>One of the ways is to display a welcome message after login:</p>
+<ol>
+<li><p>Generate an ASCII text using <a href="http://patorjk.com/software/taag" target="_blank" rel="external">ASCII text generator</a><br><img src="http://i.imgur.com/Gj2jNIx.png" alt="ASCII Text Generator"></p>
+</li>
+<li><p>Connect to remote server via ssh, and type the following:</p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>vi /etc/motd</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Paste the Generated ASCII text to <code>/etc/motd</code> file and save</p>
+</li>
+<li><p>Done! try to login via ssh again<br><img src="http://imgur.com/Yv9RtPK.png" alt="ASCII Text"></p>
+</li>
+</ol>
+<p>Reference:</p>
+<ul>
+<li><a href="http://www.shellhacks.com/en/HowTo-Set-a-Warning-Message-Banner-in-SSH" target="_blank" rel="external">Display SSH Welcome Message AFTER the Login</a></li>
+<li><a href="http://patorjk.com/software/taag" target="_blank" rel="external">http://patorjk.com ASCII Text Generator</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.ryanzzff.com/2015/12/31/SSH-welcome-message-with-ASCII-Text/" data-id="ciit32i310007re7lnr56ryoq" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ascii-text/">ascii-text</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh/">ssh</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/11/25/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
 </section>
         
           <aside id="sidebar">

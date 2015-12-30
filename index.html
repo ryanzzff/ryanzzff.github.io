@@ -61,6 +61,112 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-SSH-welcome-message-with-ASCII-Text" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/12/31/SSH-welcome-message-with-ASCII-Text/" class="article-date">
+  <time datetime="2015-12-30T16:20:10.000Z" itemprop="datePublished">2015-12-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/31/SSH-welcome-message-with-ASCII-Text/">SSH welcome message with ASCII Text</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Have you tried once logged in to a remote server through ssh, but forget if it is a DEV or PROD environment?<br>One of the ways is to display a welcome message after login:</p>
+<ol>
+<li><p>Generate an ASCII text using <a href="http://patorjk.com/software/taag" target="_blank" rel="external">ASCII text generator</a><br><img src="http://i.imgur.com/Gj2jNIx.png" alt="ASCII Text Generator"></p>
+</li>
+<li><p>Connect to remote server via ssh, and type the following:</p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>vi /etc/motd</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Paste the Generated ASCII text to <code>/etc/motd</code> file and save</p>
+</li>
+<li><p>Done! try to login via ssh again<br><img src="http://imgur.com/Yv9RtPK.png" alt="ASCII Text"></p>
+</li>
+</ol>
+<p>Reference:</p>
+<ul>
+<li><a href="http://www.shellhacks.com/en/HowTo-Set-a-Warning-Message-Banner-in-SSH" target="_blank" rel="external">Display SSH Welcome Message AFTER the Login</a></li>
+<li><a href="http://patorjk.com/software/taag" target="_blank" rel="external">http://patorjk.com ASCII Text Generator</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.ryanzzff.com/2015/12/31/SSH-welcome-message-with-ASCII-Text/" data-id="ciit32i310007re7lnr56ryoq" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ascii-text/">ascii-text</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh/">ssh</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/11/25/hello-world/" class="article-date">
+  <time datetime="2015-11-24T16:07:16.000Z" itemprop="datePublished">2015-11-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/25/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Create_a_new_draft">Create a new draft</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new draft <span class="string">"My New Draft"</span></span><br></pre></td></tr></table></figure>
+<h3 id="Publish_a_draft">Publish a draft</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo publish draft <span class="string">"My New Draft"</span></span><br></pre></td></tr></table></figure>
+<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">$ hexo server --draft</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Clean_Generated_files_and_caches">Clean Generated files and caches</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="Generate_and_Deploy">Generate and Deploy</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy -g</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.ryanzzff.com/2015/11/25/hello-world/" data-id="ciit32i2o0000re7lo0zz2gmw" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cheatsheet/">cheatsheet</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hello-world/">hello-world</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Magic-Number" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/11/24/Magic-Number/" class="article-date">
@@ -89,7 +195,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.ryanzzff.com/2015/11/24/Magic-Number/" data-id="cihdeg0z4000eut7lcba4xywl" class="article-share-link">Share</a>
+      <a data-url="http://blog.ryanzzff.com/2015/11/24/Magic-Number/" data-id="ciit32i35000kre7llz0twaeq" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/2038/">2038</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bug/">bug</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/magic-number/">magic-number</a></li></ul>
@@ -161,57 +267,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.ryanzzff.com/2015/11/14/d3-tag-cloud-on-hexo/" data-id="cihdeg0z10006ut7liqz2imn2" class="article-share-link">Share</a>
+      <a data-url="http://blog.ryanzzff.com/2015/11/14/d3-tag-cloud-on-hexo/" data-id="ciit32i33000cre7l04jtc6vq" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/d3/">d3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/d3-cloud/">d3-cloud</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tag-cloud/">tag-cloud</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/11/14/hello-world/" class="article-date">
-  <time datetime="2015-11-14T10:47:57.000Z" itemprop="datePublished">2015-11-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/14/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://blog.ryanzzff.com/2015/11/14/hello-world/" data-id="cihdeg0yy0001ut7lqbmdf8hr" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hello-world/">hello-world</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
 
     </footer>
   </div>
@@ -231,7 +290,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/2038/">2038</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bug/">bug</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/d3/">d3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/d3-cloud/">d3-cloud</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hello-world/">hello-world</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/magic-number/">magic-number</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tag-cloud/">tag-cloud</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/2038/">2038</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ascii-text/">ascii-text</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bug/">bug</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cheatsheet/">cheatsheet</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/d3/">d3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/d3-cloud/">d3-cloud</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hello-world/">hello-world</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/magic-number/">magic-number</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/">ssh</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tag-cloud/">tag-cloud</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -248,6 +307,15 @@
         tagCloudList.push(tag);
       
         var tag = { name: "hello-world", frequency: 1};
+        tagCloudList.push(tag);
+      
+        var tag = { name: "cheatsheet", frequency: 1};
+        tagCloudList.push(tag);
+      
+        var tag = { name: "ssh", frequency: 1};
+        tagCloudList.push(tag);
+      
+        var tag = { name: "ascii-text", frequency: 1};
         tagCloudList.push(tag);
       
         var tag = { name: "d3", frequency: 1};
@@ -268,6 +336,21 @@
         var tag = { name: "2038", frequency: 1};
         tagCloudList.push(tag);
       
+        var tag = { name: "XAML", frequency: 0};
+        tagCloudList.push(tag);
+      
+        var tag = { name: "user-control", frequency: 0};
+        tagCloudList.push(tag);
+      
+        var tag = { name: "binding", frequency: 0};
+        tagCloudList.push(tag);
+      
+        var tag = { name: "uwp", frequency: 0};
+        tagCloudList.push(tag);
+      
+        var tag = { name: "MVVM", frequency: 0};
+        tagCloudList.push(tag);
+      
       </script>
       <div id="d3-tag-cloud-canvas"></div>
     </div>
@@ -279,7 +362,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -291,15 +374,19 @@
       <ul>
         
           <li>
+            <a href="/2015/12/31/SSH-welcome-message-with-ASCII-Text/">SSH welcome message with ASCII Text</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/25/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
             <a href="/2015/11/24/Magic-Number/">Magic Number</a>
           </li>
         
           <li>
             <a href="/2015/11/14/d3-tag-cloud-on-hexo/">d3.js tag cloud on hexo</a>
-          </li>
-        
-          <li>
-            <a href="/2015/11/14/hello-world/">Hello World</a>
           </li>
         
       </ul>
